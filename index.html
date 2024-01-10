@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator-body">
+        <input readonly name="result" id="result" value="0""><br>
+        <div class="btn-container">
+            <button onclick="updateResult('&#40;')">&lpar;</button>
+            <button onclick="updateResult('&#41;')">&rpar;</button>
+            <button onclick="updateResult('/100')">&percnt;</button>
+            <button onclick="clearResult()">AC</button>
+
+            <button onclick="updateResult('7')">7</button>
+            <button onclick="updateResult('8')">8</button>
+            <button onclick="updateResult('9')">9</button>
+            <button onclick="updateResult('/')">&divide;</button>
+
+            <button onclick="updateResult('4')">4</button>
+            <button onclick="updateResult('5')">5</button>
+            <button onclick="updateResult('6')">6</button>
+            <button onclick="updateResult('*')">&times;</button>
+
+            <button onclick="updateResult('1')">1</button>
+            <button onclick="updateResult('2')">2</button>
+            <button onclick="updateResult('3')">3</button>
+            <button onclick="updateResult('-')">&minus;</button>
+
+            <button onclick="updateResult('0')">0</button>
+            <button onclick="updateResult('.')">&period;</button>
+            <button onclick="updateResult('**')">x<sup>y</sup></button>
+            <button onclick="updateResult('+')">&plus;</button>
+
+            <button id="delete-btn" onclick="deleteLastChar()">DEL</button>
+            <button onclick="displayPrevResult()">ANS</button>
+            <button onclick="displayResult()">&equals;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

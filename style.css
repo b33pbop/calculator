@@ -1,0 +1,41 @@
+.calculator-body {
+    background-color: grey;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 400px;
+}
+
+#result {
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px; /* Adjust the gap as needed */
+    padding-bottom: 10px;
+}
+
+.btn-container button {
+    height: 50px;
+}
+
+.btn-container :nth-last-child(-n+3) {
+    grid-template-columns: repeat(2, 1fr) 2fr; /* Adjust the column widths */
+}
+
+.btn-container :nth-child(23) {
+    grid-column: span 2;
+}
+
+.btns {
+    width: 100%; /* Each button takes up the full width of its grid cell */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
