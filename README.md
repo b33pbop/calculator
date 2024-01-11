@@ -8,5 +8,5 @@ The main focus of this project is to learn vanilla javascript and practice HTML/
 
 # Stack
 - Javascript
-- HTML, CSS
+- HTML/CSS
 
